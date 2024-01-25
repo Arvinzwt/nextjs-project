@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "dev": "nodemon ./bin/www",
+    "build":"pkg ./bin/www -t node16-macos-x64 --out-path=dist/"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -16,5 +17,9 @@
   },
   "devDependencies": {
     "cors": "^2.8.5"
+  },
+  "pkg": {
+    "assets": ["public/**/*","views/**/*"],
+    "scripts": "workers/**/*.js"
   }
 }

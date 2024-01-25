@@ -1,0 +1,24 @@
+{
+  "name": "arvinzwt",
+  "version": "1.0.0",
+  "description": "#### 介绍 arvinzwt' daily records",
+  "main": "index.js",
+  "scripts": {
+    "install:all": "npm-run-all --parallel install:*",
+    "dev:all": "npm-run-all --parallel dev:*",
+    "build:all": "npm-run-all --parallel build:*",
+    "install:client": "cd client && npm install",
+    "install:server": "cd server && npm install",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "build:client": "cd client && npm run build",
+    "build:server": "cd server && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "npm-run-all": "^4.1.5"
+  }
+}
